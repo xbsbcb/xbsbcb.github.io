@@ -3,12 +3,12 @@
 # 导入主题
 theme: jekyll-theme-chirpy
 
-# 网页语言设置 › http://www.lingoes.net/en/translator/langcode.htm
-# 如果与`_data/locales`文件夹中的文件名相同，布局语言也会相应改变，
-# 否则将使用默认的'en'值
+# 网页语言 › http://www.lingoes.net/en/translator/langcode.htm
+# 如果名称与 `_data/locales` 文件夹中的文件同名，布局语言也会相应改变，
+# 否则布局语言将使用默认值 'en'。
 lang: zh-CN
 
-# 更改为您的时区 › https://kevinnovak.github.io/Time-Zone-Picker
+# 设置时区 › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Shanghai
 
 # jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
@@ -16,30 +16,30 @@ timezone: Asia/Shanghai
 
 title: xbsbcb's blog # 主标题
 
-tagline: Hello World! # 显示为副标题
+tagline: ¡plɹoM ollǝH # 显示为副标题
 
-description: >- # 用于SEO元数据和Atom订阅
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # 用于SEO元数据和Atom订阅源
+  Record what should be recorded.
 
-# 填写您的站点协议和主机名
-# 例如：'https://username.github.io'，注意不要以'/'结尾
+# 填写站点的协议和主机名
+# 例如 'https://username.github.io'，注意不以斜杠结尾
 url: "https://xbsbcb.github.io"
 
 github:
-  username: xbsbcb # 更改为您的GitHub用户名
+  username: xbsbcb # 修改为你的GitHub用户名
 
 twitter:
-  username: xxxxx # 更改为您的Twitter用户名
+  username: twitter_username # 修改为你的Twitter用户名
 
 social:
-  # 更改为您的全名
-  # 将作为文章的默认作者和页脚的版权所有者
-  name: TianZhibo
-  email: xbsbcb@gmail.com # 更改为您的邮箱地址
+  # 修改为你的全名
+  # 将作为文章的默认作者和页脚的版权所有者显示
+  name: xbsbcb
+  email: xbsbcb@gmail.com # 修改为你的邮箱地址
   links:
-    # 第一个链接将作为版权所有者的链接
-    - https://twitter.com/username # 更改为您的Twitter主页
-    - https://github.com/username # 更改为您的GitHub主页
+    # 第一个元素作为版权所有者的链接
+    - https://twitter.com/ # 修改为你的Twitter主页
+    - https://github.com/ # 修改为你的GitHub主页
     # 取消注释以添加更多社交链接
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -50,16 +50,16 @@ webmaster_verifications:
   bing: # 填写Bing验证码
   alexa: # 填写Alexa验证码
   yandex: # 填写Yandex验证码
-  baidu: # 填写Baidu验证码
+  baidu: # 填写百度验证码
   facebook: # 填写Facebook验证码
 
 # ↑ --------------------------
-# jekyll-seo-tag 设置结束
+# `jekyll-seo-tag` 设置结束
 
 # 网站分析设置
 analytics:
   google:
-    id: # 填写Google Analytics ID
+    id: # G-6EFYNHHP4N
   goatcounter:
     id: # 填写GoatCounter ID
   umami:
@@ -68,71 +68,157 @@ analytics:
   matomo:
     id: # 填写Matomo ID
     domain: # 填写Matomo域名
-  cloudflare:
-    id: # 填写Cloudflare网站分析令牌
-  fathom:
-    id: # 填写Fathom站点ID
 
-# 页面浏览统计设置
+# 页面浏览量设置
 pageviews:
   provider: # 目前仅支持'goatcounter'
 
-# 主题颜色偏好设置
+# 偏好配色方案设置
 #
 # 注意：保持空值将默认跟随系统配色，
 # 侧边栏左下方会有切换深色/浅色主题的开关
 #
-# 可用选项：
-#     light — 使用浅色主题
-#     dark — 使用深色主题
+# 可用选项:
+#
+#     light  - 使用浅色主题
+#     dark   - 使用深色主题
 #
 theme_mode: # [light | dark]
 
-# 媒体资源的CDN端点
-# 设置后，所有以'/'开头的媒体资源路径（站点头像、文章图片、音视频文件）
-# 都将添加该CDN地址
+# 图片CDN端点
+# 注意：设置后将自动为所有以'/'开头的图片路径（站点头像和文章图片）添加CDN地址
 #
-# 例如：'https://cdn.com'
-cdn:
+# 例如 'https://cdn.com'
+img_cdn: # https://testingcf.jsdelivr.net/gh/winxuan/winxuan.github.io
 
-# 侧边栏头像，支持本地或CORS资源
-avatar: assets/img/avatar.jpg
+# 侧边栏头像，支持本地或跨域资源
+avatar: /assets/img/avatar.jpg
 
-# 全站社交媒体预览图片URL，用于SEO的og:image元标签
+# 全站社交媒体预览图URL，用于SEO的og:image元标签
 # 可通过文章front matter中的page.image覆盖
-social_preview_image: # 字符串，本地或CORS资源
+social_preview_image: # 字符串，本地或跨域资源
 
 # 布尔值，控制文章目录的全局开关
 toc: true
 
 comments:
-  # 评论系统的全局开关，保持空值表示禁用
-  provider: # [disqus | utterances | giscus]
-  # 各评论提供商配置：
+  # 文章评论系统的全局开关。保持空值表示禁用
+  provider: giscus
+  # 各评论平台选项如下：
   disqus:
     shortname: # 填写Disqus短名称 › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances设置 › https://utteranc.es/
   utterances:
-    repo: # <GitHub用户名>/<仓库名>
+    repo: # <gh-用户名>/<仓库>
     issue_term: # < url | pathname | title | ...>
   # Giscus选项 › https://giscus.app
   giscus:
-    repo: # <GitHub用户名>/<仓库名>
-    repo_id:
-    category:
-    category_id:
-    mapping: # 可选，默认为'pathname'
-    strict: # 可选，默认为'0'
-    input_position: # 可选，默认为'bottom'
-    lang: # 可选，默认使用`site.lang`的值
-    reactions_enabled: # 可选，默认为'1'
+    repo: winxuan/winxuan.github.io # <gh-用户名>/<仓库>
+    repo_id: R_kgDOK9xKpw
+    category: Comments
+    category_id: DIC_kwDOK9xKp84CcIV2
+    mapping: pathname # 可选，默认'pathname'
+    input_position: bottom # 可选，默认'bottom'
+    lang: zh-CN # 可选，默认使用`site.lang`值
+    reactions_enabled: 1 # 可选，默认'1'
 
 # 自托管静态资源，可选 › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
     enabled: # 布尔值，保持空值表示false
-    # 指定Jekyll环境，空值表示全部环境
+    # 指定Jekyll环境，空值表示所有环境
     # 仅在`assets.self_host.enabled`为'true'时生效
     env: # [development | production]
 
-# ... 后续配置保持原有注释翻译模式 ...
+pwa:
+  enabled: true # PWA功能开关（可安装）
+  cache:
+    enabled: true # PWA离线缓存开关
+    # 此处定义的路径将排除在PWA缓存之外
+    # 通常其值为共享当前域名的其他网站的baseurl
+    deny_paths:
+      # - "/example"  # 匹配`<SITE_URL>/example/*`的URL不会被PWA缓存
+
+paginate: 10
+
+# 站点的基准URL
+baseurl: ""
+
+# ------------ 以下选项不建议修改 ------------------
+
+kramdown:
+  # parse_block_html: true
+  # parse_span_html: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge选项 › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: "" # 空字符串表示项目中所有文件
+      type: posts
+    values:
+      layout: post
+      comments: true # 启用文章评论
+      toc: true # 显示文章目录列
+      # 除非有充分把握更新项目中所有其他文章链接的代码，否则请勿修改以下参数
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # 见`site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+plugins:
+  - jekyll-sitemap
