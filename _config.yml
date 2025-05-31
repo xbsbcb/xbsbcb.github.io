@@ -144,10 +144,6 @@ paginate: 10
 # 站点的基准URL
 baseurl: ""
 
-htmlproofer:
-  ignore_urls:
-    - "blog.csdn.net"
-
 # ------------ 以下选项不建议修改 ------------------
 
 kramdown:
