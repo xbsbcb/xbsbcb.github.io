@@ -1,0 +1,17 @@
+1. 以管理员身份运行cmd，卸载系统秘钥
+	`slmgr /upk`
+2. 安装企业版秘钥设置>系统>激活>更改秘钥
+	`NPPR9-FWDCX-D2C8J-H872K-2YT43`
+3. 重启电脑，以管理员身份运行cmd，命令安装专业版密钥
+	`slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX`
+4. 以管理员身份运行PowerShell
+	汉化版
+	 `irm https://gitee.com/cmontage/mas-cn/raw/main/GETMASCN.ps1 | iex`
+	官方版
+	 `irm https://get.activated.win | iex`
+
+||HWID|Ohook|KMS38|Online KMS|TSforge (ZeroCID)|
+|---|---|---|---|---|---|
+|离线激活|❌|✅|✅|❌|✅|
+|永久激活|✅|✅|☑️(至2038)|☑️(180天/次)|✅|
+|不留文件|✅|❌|✅|❌|✅|

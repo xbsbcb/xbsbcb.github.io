@@ -1,0 +1,39 @@
+[win10 & win11 停止系统自动更新方法]([win10 & win11 停止系统自动更新方法_windows暂停更新怎么无限延长-CSDN博客](https://blog.csdn.net/qq_57163366/article/details/133079507?spm=1001.2014.3001.5506))
+
+![](https://i-blog.csdnimg.cn/blog_migrate/5d3c9f8ae8a43ee9f0e342bf909ef5fb.png)
+
+![](https://i-blog.csdnimg.cn/blog_migrate/6a980ebafcd257a92ada8d485f32412b.png)
+
+![](https://i-blog.csdnimg.cn/blog_migrate/f9134fdf847f54391bd82731af72ab3a.png)
+
+![](https://i-blog.csdnimg.cn/blog_migrate/a4d218a1465790ea9cae300c11f3afcd.png)
+
+目的就是扩大这个时间
+
+### 1. 进入注册表
+
+按下 win + R ，输入 regedit，回车
+
+![](https://i-blog.csdnimg.cn/blog_migrate/992682180476f542af76cd87aa03a970.png)
+
+### 2. 进入如下目录
+
+`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings`
+
+![](https://i-blog.csdnimg.cn/blog_migrate/f9991bf562c587300e52586c3597bf3c.png)
+
+### 3. 新建 DWOED(32-位)值
+
+![](https://i-blog.csdnimg.cn/blog_migrate/2e310ada2d08c74c3f715276655de3ce.png)
+
+命名为：FlightSettingsMaxPauseDays
+
+### 4. 双击 FlightSettingsMaxPauseDays，选择十进制，左侧输入9999
+
+此处9999代表你要暂停更新的天数，点击确定
+
+![](https://i-blog.csdnimg.cn/blog_migrate/bd619222eb3d04671774e2d7ce784539.png)
+
+### 5. 开头的天数已经变为9999天
+
+![](https://i-blog.csdnimg.cn/blog_migrate/d7e2ed9859b9bd020e2f209e24908aef.png)
